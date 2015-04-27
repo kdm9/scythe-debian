@@ -1,0 +1,19 @@
+From: Kevin Murray <spam@kdmurray.id.au>
+Date: Mon, 27 Apr 2015 16:12:53 +1000
+Subject: Add test executable to gitignore
+
+---
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/.gitignore b/.gitignore
+index dda806e..b2a3535 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -42,5 +42,6 @@ tramp
+ *.out
+ 
+ scythe
++test-scythe
+ 
+ *.gch
