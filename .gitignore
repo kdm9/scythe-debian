@@ -44,3 +44,8 @@ tramp
 scythe
 
 *.gch
+
+# debian stuff
+debian/files
+debian/scythe.substvars
+
