@@ -1,0 +1,35 @@
+From: Kevin Murray <spam@kdmurray.id.au>
+Date: Mon, 27 Apr 2015 16:59:32 +1000
+Subject: Fix typos in binary
+
+---
+ src/prob.c   | 2 +-
+ src/scythe.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/prob.c b/src/prob.c
+index 8bb3a70..adbf4a3 100644
+--- a/src/prob.c
++++ b/src/prob.c
+@@ -28,7 +28,7 @@ float *qual_to_probs(const char *qual, quality_type q_type) {
+   for (i = 0; i < n; i++) {
+     q = (char) qual[i]-quality_contants[q_type][Q_OFFSET];
+     if (q < quality_contants[q_type][Q_MIN] || q > quality_contants[q_type][Q_MAX]) {
+-      fprintf(stderr, "Base quality out of range for specifed quality type (%d): %d\n", q_type, q);
++      fprintf(stderr, "Base quality out of range for specified quality type (%d): %d\n", q_type, q);
+       exit(EXIT_FAILURE);
+     }
+     if (q_type == SOLEXA) {
+diff --git a/src/scythe.c b/src/scythe.c
+index 5952a57..5ef5dc3 100644
+--- a/src/scythe.c
++++ b/src/scythe.c
+@@ -228,7 +228,7 @@ int main(int argc, char *argv[]) {
+   seq = kseq_init(fp);
+ 
+   /* Loop through entire sequence file. Write trimmed sequences to
+-     file (or stdout), and record matches in a match file if specifed.
++     file (or stdout), and record matches in a match file if specified.
+   */
+   while ((l = kseq_read(seq)) >= 0) {
+     shift = -1;
