@@ -4,3 +4,7 @@ include /usr/share/dpkg/buildflags.mk
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	dh_auto_build
+	ronn -r --manual=scythe --organization='Vince Buffalo' debian/scythe.1.ronn
