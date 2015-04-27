@@ -42,10 +42,11 @@ tramp
 *.out
 
 scythe
+test-scythe
 
 *.gch
 
 # debian stuff
 debian/files
 debian/scythe.substvars
-
+debian/scythe.debhelper.log
