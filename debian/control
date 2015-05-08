@@ -1,5 +1,6 @@
 Source: scythe
-Maintainer: Kevin Murray <spam@kdmurray.id.au>
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Uploaders: Kevin Murray <spam@kdmurray.id.au>
 Section: science
 Priority: optional
 Standards-Version: 3.9.6
