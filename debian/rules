@@ -8,3 +8,7 @@ include /usr/share/dpkg/buildflags.mk
 override_dh_auto_build:
 	dh_auto_build
 	ronn -r --manual=scythe --organization='Vince Buffalo' debian/scythe.1.ronn
+
+get-orig-source:
+	@echo "Downloading source from GitHub"
+	wget -O scythe_0.994.orig.tar.gz https://api.github.com/repos/vsbuffalo/scythe/tarball/20d3cff7d7f483bd779aff75f861e93708c0a2b5
