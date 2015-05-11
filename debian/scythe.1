@@ -7,9 +7,9 @@
 scythe \-t sanger \-a /path/to/adaptors\.fasta [options] <sequences\.fastq\.gz>
 .
 .P
-Trim 3\'\-end adapter contaminants off sequence files\. If no output file is specified, scythe will use stdout\.
+Trim 3\'-end adaptor contaminants off sequence files\. If no output file is specified, scythe will use stdout\.
 .
-.SH "USAGE"
+.SH "OPTIONS"
 .
 .nf
  \-p, \-\-prior prior (default: 0\.300)
@@ -22,8 +22,7 @@ Trim 3\'\-end adapter contaminants off sequence files\. If no output file is spe
       \-\-quiet don\'t output statistics about trimming to stdout (default: off)
       \-\-help display this help and exit
       \-\-version output version information and exit
-.
-.SH "Quality Schemes"
+
 .nf
 These are the quality encoding schemes scythe recognises (see \'\-\-quality\')
 
@@ -37,5 +36,12 @@ These are the quality encoding schemes scythe recognises (see \'\-\-quality\')
   illumina  Illumina output from pipeline versions between 1\.3 and 1\.7\.
             ASCII offset of 64, range: [0, 62]
 .
+.SH "FILES"
+.nf
+
+adaptors\.fasta: Provide contaminant sequences as a fasta-formatted file\.
+                 See \'/usr/share/doc/scythe/illumina_adaptors\.fa\'\.
+                 N\.B\.: Index/Barcode sequences should be substituted for Ns in
+                 the example adaptor file.
 .SH "AUTHOR"
 Vince Buffalo, https://github.com/vsbuffalo
