@@ -50,4 +50,3 @@ test-scythe
 debian/files
 debian/scythe.substvars
 debian/scythe.debhelper.log
-debian/scythe.1
