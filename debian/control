@@ -3,11 +3,13 @@ Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.
 Uploaders: Kevin Murray <spam@kdmurray.id.au>
 Section: science
 Priority: optional
-Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9),
                zlib1g-dev,
                ruby-ronn,
                check
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-med/scythe.git
+Vcs-Git: git://anonscm.debian.org/debian-med/scythe.git
 Homepage: https://github.com/vsbuffalo/scythe
 
 Package: scythe
